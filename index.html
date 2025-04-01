@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Γειά σου!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="message">Γειά σου!</h1>
+    <button onclick="changeMessage()">Κάνε Κλικ</button>
+
+    <script>
+        function changeMessage() {
+            window.location = "javascript:document.getElementById('message').innerText = 'Καλώς ήρθες!';";
+        }
+    </script>
+</body>
+</html>
+
